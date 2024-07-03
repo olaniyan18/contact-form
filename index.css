@@ -1,0 +1,322 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(148, 38%, 91%);
+    color: hsl(187, 24%, 22%);
+    font-family: 'Karla';
+    
+}
+
+
+.popup {
+  position: relative;
+  width: 250px;
+  height: 40px;
+  top: -20px;
+  left: 20%;
+  /* transform: translateX(-50%); */
+  background-color: hsl(187, 24%, 22%);
+  color: hsl(148, 38%, 91%);
+  padding: 10px;
+  border-radius: 5px;
+  visibility: hidden;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+  z-index: 1000; 
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+
+.sent{
+    margin-top: -20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.form{
+    margin-top: 10px;
+    font-size: 9px;
+}
+
+
+
+
+
+.container {
+    margin: 0;
+   width: auto;
+   height: auto;
+   background-color:hsl(0, 0%, 100%);
+   padding: 25px;
+   border-radius: 15px;
+   font-size: 16px;
+   
+}
+
+input:focus{
+    outline: none;
+    border-color: hsl(169, 82%, 27%);
+}
+
+input{
+    border-radius: 5px;
+    padding: 7px;
+    padding-left: 12px;
+    border:1px solid hsl(186, 15%, 59%);
+    caret-color: hsl(169, 82%, 27%);
+    font-size: 15px;
+    font-family: 'Karla';
+}
+
+.contact{
+    font-weight: bold;
+    display: flex;
+    font-size: 20px;
+}
+
+.name{
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+    width: 100%;
+    font-size: 12px;
+}
+
+.firstname::after{
+    content: "*";
+    color: hsl(169, 82%, 27%);
+    font-weight: bold;
+    margin-left: 3px;
+}
+
+.lastname::after{
+    content: "*";
+    color: hsl(169, 82%, 27%);
+    font-weight: bold;
+    margin-left: 3px;
+}
+
+.emailaddress::after{
+    content: "*";
+    color: hsl(169, 82%, 27%);
+    font-weight: bold;
+    margin-left: 3px;
+}
+
+.message::after{
+    content: "*";
+    color: hsl(169, 82%, 27%);
+    font-weight: bold;
+    margin-left: 3px;
+}
+
+.type::after{
+    content: "*";
+    color: hsl(169, 82%, 27%);
+    font-weight: bold;
+    margin-left: 3px;
+}
+
+.team::after{
+    content: "  *";
+    color: hsl(169, 82%, 27%);
+    font-weight: bold;
+    margin-left: 3px;
+}
+
+
+.firstnameinput{
+    width: 90%;
+    margin-top: 10px;
+}
+
+.lastnameinput{
+    width: 90%;
+    margin-top: 10px;
+}
+
+.email{
+    margin-top: 7px;
+    height: 70px;
+    font-size: 12px;
+}
+
+
+
+.emailinput{
+    
+    margin-top: 5px;
+    width: 96%;
+}
+
+
+.querytype{
+    width: 100%;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+
+.input{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+}
+
+input[type="radio"]:checked + .input {
+    background-color: #007bff;
+}
+
+input[type="radio"]:checked + .request {
+    background-color: #007bff;
+}
+
+
+
+.message{
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.messageinput{
+    font-family: 'Karla';
+    margin-top: 5px;
+    width: 96%;
+    height: 60px;
+    border-radius: 5px;
+    padding: 9px;
+    resize: none;
+    border:1px solid hsl(186, 15%, 59%);
+}
+
+textarea:focus{
+    outline: none;
+}
+
+.team{
+    margin-left: 5px;
+}
+
+
+.consent{
+    margin-top: 15px;
+    margin-bottom: 7px;
+    accent-color: hsl(169, 82%, 27%);
+}
+
+.submit{
+    margin-top: 10px;
+   width: 100%;
+   padding: 10px;
+   background-color: hsl(169, 82%, 27%);
+   color: hsl(0, 0%, 100%);
+   border: 0;
+   font-family: 'Karla';
+}
+
+
+.enquiry{
+    width: 50%;
+    border-radius: 5px;
+    padding: 9px;
+    padding-left: 10px;
+    border: 1px solid hsl(186, 15%, 59%);
+    font-size: 15px;
+    accent-color: hsl(169, 82%, 27%);
+}
+
+.request{
+    width: 50%;
+    border-radius: 5px;
+    padding: 9px;
+    padding-left: 10px;
+    border: 1px solid hsl(186, 15%, 59%);
+    font-size: 15px;
+    accent-color: hsl(169, 82%, 27%);
+}
+
+.input{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+p{
+    margin-top: 5px;
+    color: hsl(0, 66%, 54%);
+    font-size: 13px;
+    margin-bottom: 5px;
+    visibility: hidden;
+}
+
+  
+  /* Add animation (fade in the popup) */
+
+
+
+@media only screen and (max-width: 500px) {
+
+    .container{
+        position: absolute;
+        top: 60px;
+
+    }
+
+    .emailinput{
+        width: 90%;
+    }
+
+    .name{
+       flex-direction: column;
+
+    }
+
+    .input{
+        flex-direction: column;
+    }
+
+    .enquiry{
+
+        width: 90%;
+    }
+
+    .request{
+        width: 90%;
+    }
+
+    .messageinput{
+        width: 90%;
+        height: 200px;
+    }
+
+    .consenttext {
+        width: 260px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .team {
+        margin-top: 10px;
+    }
+
+    .popup{
+        top: 15px;
+        width: 150px;
+        height: 49px;
+    }
+
+}
