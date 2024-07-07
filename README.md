@@ -2,6 +2,7 @@
 
 ![Design preview for the Contact form coding challenge](./design/desktop-preview.jpg)
 
+Preview live: https://olaniyan18.github.io/contact-form/
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
